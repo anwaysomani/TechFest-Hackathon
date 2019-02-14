@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Workspace</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<!-- Custom Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="static/css/index.css">
@@ -18,13 +20,34 @@
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400" rel="stylesheet">
 
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 </head>
 
 <body>
+
 	<div class="banner">
-		<h1><b>TechFest '19 Hackathon</b></h1>
+		<div class="topnav">
+			<div class="text ttitle">
+				<!-- <a href="#" >Time-Travel</a> -->
+			</div>
+<!-- 			<div class="text nav ralign">
+				<a href="#" class="toBeChanged" style="font-size: 30px;">Home</a>
+				<a href="#" class="toBeChanged" style="font-size: 30px;">Genric</a>
+				<a href="#" class="toBeChanged" style="font-size: 30px;">Element</a>
+			</div> -->
+			<div id="mySidenav" class="sidenav">
+  				<a href="file:///C:/Users/LENOVO/Documents/GitHub/TechFest-Hackathon/index.html#events_perma" id="events">Events</a>
+			  	<a href="file:///C:/Users/LENOVO/Documents/GitHub/TechFest-Hackathon/index.html#timeline_perma" id="timeline">Timeline</a>
+			  	<a href="file:///C:/Users/LENOVO/Documents/GitHub/TechFest-Hackathon/index.html#sponsors_perma" id="sponsors">Sponsors</a>
+			  	<a href="file:///C:/Users/LENOVO/Documents/GitHub/TechFest-Hackathon/index.html#contact-us_perma" id="contact-us">Contact Us</a>
+			</div>
+		</div>
+		<h1><b id="myHeader">TechFest '19 Hackathon</b></h1>
 	</div>
-	<div class="box">
+	<br><br>
+	<div class="box" id="events_perma">
 		<div class="box3">
 			<h1>Front-End Hackathon</h1>
 			<p>Applicants are required to create an application(Web/Mobile), and the applications will be tested for User Interface and User Experience within the application.</p>
@@ -38,14 +61,17 @@
 			<p>Applicants are required to create an application(Web/Mobile), and the applications will be tested for UI/UX, as well as data transaction & processing within it.</p>
 		</div>
 		<div class="box3 line">
-			<h1>Competitve Challenge</h1>
+			<h1>Competitive Challenge</h1>
 			<p>Applicants are provided with a set of problem statements which needs to be resolved in the stipulated time, in any language applicant is comfortable with.</p>
 		</div>
 	</div>
 
-	<div style="color: white; text-align: center;">
+	<div style="color: white; text-align: center;" id="timeline_perma">
+		<br>
 		<h2><b>Timeline</b></h2>
 	</div>
+
+	<br>
 
 	<div class="boxp">
 		<div class="demo">
@@ -57,10 +83,10 @@
                                 <div class="timeline-content">
                                     <span class="year">DAY-1</span>
                                     <div class="content-inner">
-                                        <span class="icon"><i class="fa fa-pencil"></i></span>
-                                        <h3 class="title">Front End Hackathon</h3>
+                                        <span class="icon"><i class="fas fa-pencil-ruler"></i></span>
+                                        <h3 class="title">Front-End Hackathon</h3>
                                         <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis. Quisque eu ornare risus, vitae fermentum eros. Etiam venenatis ac.
+                                            
                                         </p>
                                     </div>
                                 </div>
@@ -70,9 +96,9 @@
                                     <span class="year">DAY-1</span>
                                     <div class="content-inner">
                                         <span class="icon"><i class="fa fa-server"></i></span>
-                                        <h3 class="title">Back End Hackathon</h3>
+                                        <h3 class="title">Back-End Hackathon</h3>
                                         <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis. Quisque eu ornare risus, vitae fermentum eros. Etiam venenatis ac.
+                                            
                                         </p>
                                     </div>
                                 </div>
@@ -82,9 +108,9 @@
                                     <span class="year">DAY-2</span>
                                     <div class="content-inner">
                                         <span class="icon"><i class="fa fa-briefcase"></i></span>
-                                        <h3 class="title">Full Stack Hackathon</h3>
+                                        <h3 class="title">Full-Stack Hackathon</h3>
                                         <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis. Quisque eu ornare risus, vitae fermentum eros. Etiam venenatis ac.
+                                            
                                         </p>
                                     </div>
                                 </div>
@@ -96,7 +122,7 @@
                                         <span class="icon"><i class="fa fa-mobile"></i></span>
                                         <h3 class="title">Competitive Hackathon</h3>
                                         <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis. Quisque eu ornare risus, vitae fermentum eros. Etiam venenatis ac.
+                                            
                                         </p>
                                     </div>
                                 </div>
@@ -107,37 +133,73 @@
             </div>
         </div>
 	</div>
-	<div class="box2p">
+	<div class="box2p" id="sponsors_perma">
 		<div class="title">
-			<h1>Nunc Dignissim</h1>
-			<p>Aliquam erat volutpat nam dui </p>
+			<h1>Sponsors</h1>
+			<p></p>
 		</div>
 		<div class="pbox">
 			<div class="photo">
-				<img src="https://templated.co/items/demos/theory/images/pic01.jpg" width="100%">
-				<h3>Praesent placerat magna</h3>
-				<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.</p>
-				<a class="More" href="#" >More</a>
+				<img src="" width="100%">
+				<h3>Name & Logo of Sponsoring Brand</h3>
+				<p>Some description about the sponsoring model. If the number of sponsors have gone up, then there will be just the logo and name of the sponsor and on clicking the name or logo, will be redirect to the website of that brand/sponsor link.</p>
 			</div>
 			<div class="photo">
-				<img src="https://templated.co/items/demos/theory/images/pic02.jpg" width="100%">
-				<h3>Praesent placerat magna</h3>
-				<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus.</p>
-				<a class="More" href="#" >More</a>
+				<img src="" width="100%">
+				<h3>Name & Logo of Sponsoring Brand</h3>
+				<p>Some description about the sponsoring model. If the number of sponsors have gone up, then there will be just the logo and name of the sponsor and on clicking the name or logo, will be redirect to the website of that brand/sponsor link.</p>
+			</div>
+		</div>
+		<hr class="line">
+	</div>
+	<div class="box2p" id="contact-us_perma">
+		<div class="title">
+			<h1>To Contact For Sponsorship</h1>
+			<p></p>
+		</div>
+		<div class="pbox">
+			<div class="photo">
+				<img src="" width="100%">
+				<h3>Anway Somani</h3>
+				<p>Hackathon Event Coordinator, Ajeenkya DY Patil University</p>
+				<p><i class="fas fa-blender-phone"></i>   <b>9096052940</b></p>
+				<p><i class="fas fa-at"></i> <b>anwaysomani@gmail.com</b></p>
+			</div>
+			<div class="photo">
+				<img src="" width="100%">
+				<h3>Shubham Nandi</h3>
+				<p>Hackathon Event Coordinator, Ajeenkya DY Patil University</p>
+				<p><i class="fas fa-blender-phone"></i>   <b>9970367853</b></p>
+				<p><i class="fas fa-at"></i> <b>shubhamnandi@gmail.com</b></p>
 			</div>
 		</div>
 		<hr class="line">
 	</div>
 	<div class="last"> 
-		<div class="combo lalign"><p>© Untitled. Design: SIIT. Images: Unsplash.</p></div>
 		<div class="combo ralign social">
-			<a href="#"> <i class="fa fa-facebook " aria-hidden="true"></i> </a>
-			<a href="#"> <i class="fa fa-twitter " aria-hidden="true"></i> </a>
-			<a href="#"> <i class="fa fa-linkedin " aria-hidden="true"></i> </a>
-			<a href="#"> <i class="fa fa-pinterest-p " aria-hidden="true"></i> </a>
-			<a href="#"> <i class="fa fa-vimeo " aria-hidden="true"></i> </a>
+			<b>To know more about us...</b>
+			<a href="#"> <i class="fab fa-facebook-square" aria-hidden="true"></i></i> </a>
+			<a href="#"> <i class="fab fa-twitter-square " aria-hidden="true"></i> </a>
+			<a href="#"> <i class="fab fa-linkedin" aria-hidden="true"></i> </a>
+			<a href="#"> <i class="fab fa-pinterest-square" aria-hidden="true"></i> </a>
+			<a href="#"> <i class="fab fa-vimeo " aria-hidden="true"></i> </a>
 		</div>
 	</div>
+
+	<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 
 	
 </body>
