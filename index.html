@@ -1,206 +1,329 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Workspace</title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<!-- Custom Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="static/css/index.css">
-	<link rel="stylesheet" type="text/css" href="static/css/index2.css">
-
-	<!-- BootStrap Stylesheet -->
-	<link href="static/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="static/js/bootstrap.min.js"></script>
-	<script src="static/js/jquery-1.11.1.min.js"></script>
-
-	<!-- Font Awesome -->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400" rel="stylesheet">
-
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Evento -Event Html Template">
+    <meta name="keywords" content="Evento , Event , Html, Template">
+    <meta name="author" content="ColorLib">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ========== Title ========== -->
+    <title>#TECH</title>
+    <!-- ========== Favicon Ico ========== -->
+    <!--<link rel="icon" href="fav.ico">-->
+    <!-- ========== STYLESHEETS ========== -->
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts Icon CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="assets/css/et-line.css" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <!-- Carousel CSS -->
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon"/>
 </head>
+<body  style="background-color: black;">
+<div class="loader">
+    <div class="loader-outter"></div>
+    <div class="loader-inner"></div>
+</div>
 
-<body>
+<!--header start here -->
+<header class="header navbar fixed-top navbar-expand-md">
+    <div class="container">
+        <a class="navbar-brand logo" href="#">
+            <img src="assets/img/logo-dark.png" alt="logo"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-text-align-right"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
+            <ul class=" nav navbar-nav menu">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="calender.html">calender</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Sponsers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!--header end here-->
 
-	<div class="banner">
-		<div class="topnav">
-			<div class="text ttitle">
-				<!-- <a href="#" >Time-Travel</a> -->
-			</div>
-<!-- 			<div class="text nav ralign">
-				<a href="#" class="toBeChanged" style="font-size: 30px;">Home</a>
-				<a href="#" class="toBeChanged" style="font-size: 30px;">Genric</a>
-				<a href="#" class="toBeChanged" style="font-size: 30px;">Element</a>
-			</div> -->
-			<div id="mySidenav" class="sidenav">
-  				<a href="file:///C:/Users/LENOVO/Documents/GitHub/TechFest-Hackathon/index.html#events_perma" id="events">Events</a>
-			  	<a href="file:///C:/Users/LENOVO/Documents/GitHub/TechFest-Hackathon/index.html#timeline_perma" id="timeline">Timeline</a>
-			  	<a href="file:///C:/Users/LENOVO/Documents/GitHub/TechFest-Hackathon/index.html#sponsors_perma" id="sponsors">Sponsors</a>
-			  	<a href="file:///C:/Users/LENOVO/Documents/GitHub/TechFest-Hackathon/index.html#contact-us_perma" id="contact-us">Contact Us</a>
-			</div>
-		</div>
-		<h1><b id="myHeader">TechFest '19 Hackathon</b></h1>
-	</div>
-	<br><br>
-	<div class="box" id="events_perma">
-		<div class="box3">
-			<h1>Front-End Hackathon</h1>
-			<p>Applicants are required to create an application(Web/Mobile), and the applications will be tested for User Interface and User Experience within the application.</p>
-		</div>
-		<div class="box3 line" >
-			<h1>Back-End Hackathon</h1>
-			<p>Applicants are required to create an application(Web/Mobile), and the applications will be tested for data transaction and data processing.</p>
-		</div>
-		<div class="box3 line">
-			<h1>Full-Stack Hackathon</h1>
-			<p>Applicants are required to create an application(Web/Mobile), and the applications will be tested for UI/UX, as well as data transaction & processing within it.</p>
-		</div>
-		<div class="box3 line">
-			<h1>Competitive Challenge</h1>
-			<p>Applicants are provided with a set of problem statements which needs to be resolved in the stipulated time, in any language applicant is comfortable with.</p>
-		</div>
-	</div>
+<!--cover-->
+<div id="home" class="intro route bg-image home-cover" style="background-image: url(assets/img/bg/bg.gif)">
 
-	<div style="color: white; text-align: center;" id="timeline_perma">
-		<br>
-		<h2><b>Timeline</b></h2>
-	</div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container cover_item">
+            <h2 class="cover-title" id="">
+                Prepare yourself for the
+            </h2>
+            <strong class="cover-xl-text" id="delayedText">HASHTECH 2K19</strong>
+            <p class="cover-date">
+                12 - 15 March 2019  - Ajeenkya dy patil university,  pune
+            </p>
+            <a href="#" class=" btn btn-primary btn-rounded" >
+                Buy Tickets Now
+            </a> 
+        </div>
+      </div>
+    </div>
+  </div>
+<!--cover-->
 
-	<br>
+<!--event info -->
+<section class="pt100 pb100" style="background-color: black">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-3  " >
+                <div class="icon_box_two">
+                    <i class="far fa-calendar"></i>
+                    <div class="content">
+                        <h5 class="box_title">
+                            CALENDER
+                        </h5>
+                        <p>
+                            12-14 february 2018
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-	<div class="boxp">
-		<div class="demo">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="main-timeline6">
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <span class="year">DAY-1</span>
-                                    <div class="content-inner">
-                                        <span class="icon"><i class="fas fa-pencil-ruler"></i></span>
-                                        <h3 class="title">Front-End Hackathon</h3>
-                                        <p class="description">
-                                            
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <span class="year">DAY-1</span>
-                                    <div class="content-inner">
-                                        <span class="icon"><i class="fa fa-server"></i></span>
-                                        <h3 class="title">Back-End Hackathon</h3>
-                                        <p class="description">
-                                            
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <span class="year">DAY-2</span>
-                                    <div class="content-inner">
-                                        <span class="icon"><i class="fa fa-briefcase"></i></span>
-                                        <h3 class="title">Full-Stack Hackathon</h3>
-                                        <p class="description">
-                                            
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <span class="year">DAY-2</span>
-                                    <div class="content-inner">
-                                        <span class="icon"><i class="fa fa-mobile"></i></span>
-                                        <h3 class="title">Competitive Hackathon</h3>
-                                        <p class="description">
-                                            
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="content">
+                        <h5 class="box_title">
+                            location
+                        </h5>
+                        <p>
+                            Ajeenkya DY Patil University
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="far fa-user"></i>
+                    <div class="content">
+                        <h5 class="box_title">
+                            speakers
+                        </h5>
+                        <p>
+                            Natalie James
+                            + guests
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="far fa-bookmark"></i>
+                    <div class="content">
+                        <h5 class="box_title">
+                            Register
+                        </h5>
+                        <p>
+                            Registration opens at 20
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-	</div>
-	<div class="box2p" id="sponsors_perma">
-		<div class="title">
-			<h1>Sponsors</h1>
-			<p></p>
-		</div>
-		<div class="pbox">
-			<div class="photo">
-				<img src="" width="100%">
-				<h3>Name & Logo of Sponsoring Brand</h3>
-				<p>Some description about the sponsoring model. If the number of sponsors have gone up, then there will be just the logo and name of the sponsor and on clicking the name or logo, will be redirect to the website of that brand/sponsor link.</p>
-			</div>
-			<div class="photo">
-				<img src="" width="100%">
-				<h3>Name & Logo of Sponsoring Brand</h3>
-				<p>Some description about the sponsoring model. If the number of sponsors have gone up, then there will be just the logo and name of the sponsor and on clicking the name or logo, will be redirect to the website of that brand/sponsor link.</p>
-			</div>
-		</div>
-		<hr class="line">
-	</div>
-	<div class="box2p" id="contact-us_perma">
-		<div class="title">
-			<h1>To Contact For Sponsorship</h1>
-			<p></p>
-		</div>
-		<div class="pbox">
-			<div class="photo">
-				<img src="" width="100%">
-				<h3>Anway Somani</h3>
-				<p>Hackathon Event Coordinator, Ajeenkya DY Patil University</p>
-				<p><i class="fas fa-blender-phone"></i>   <b>9096052940</b></p>
-				<p><i class="fas fa-at"></i> <b>anwaysomani@gmail.com</b></p>
-			</div>
-			<div class="photo">
-				<img src="" width="100%">
-				<h3>Shubham Nandi</h3>
-				<p>Hackathon Event Coordinator, Ajeenkya DY Patil University</p>
-				<p><i class="fas fa-blender-phone"></i>   <b>9970367853</b></p>
-				<p><i class="fas fa-at"></i> <b>shubhamnandi@gmail.com</b></p>
-			</div>
-		</div>
-		<hr class="line">
-	</div>
-	<div class="last"> 
-		<div class="combo ralign social">
-			<b>To know more about us...</b>
-			<a href="#"> <i class="fab fa-facebook-square" aria-hidden="true"></i></i> </a>
-			<a href="#"> <i class="fab fa-twitter-square " aria-hidden="true"></i> </a>
-			<a href="#"> <i class="fab fa-linkedin" aria-hidden="true"></i> </a>
-			<a href="#"> <i class="fab fa-pinterest-square" aria-hidden="true"></i> </a>
-			<a href="#"> <i class="fab fa-vimeo " aria-hidden="true"></i> </a>
-		</div>
-	</div>
+    </div>
+</section>
+<!--event info end -->
 
-	<script>
-window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+<!--event countdown -->
+<section class="bg-img pt70 pb70" style="background-image: url('assets/img/bg/Picture2.png');">
+    <div class="overlay_dark"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h4 class="mb30 text-center color-light">Counter until the big event</h4>
+                <div class="countdown"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--event count down end-->
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
 
-	
+<!--event-->
+
+<div class="section_title mb30 mt30 ml20">
+    <h3 class="title">
+        Events
+    </h3>
+</div>
+<div class="brand_carousel owl-carousel">
+    <div class="brand_item text-center">
+        <img src="assets/img/events/01soccer.png" alt="brand">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/events/02line.png" alt="brand">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/events/03roborace.png" alt="brand">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/events/06project.png" alt="brand">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/events/05business.png" alt="brand">
+    </div>
+</div>
+       
+<!--event-->
+
+<!--workshop-->
+
+<div class="section_title mb30 mt30 ml20">
+    <h3 class="title">
+        workshop
+    </h3>
+</div>
+<div class="brand_carousel owl-carousel">
+    <div class="brand_item text-center">
+        <img src="assets/img/events/10drone.png" alt="drone">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/events/11ethhacking.png" alt="hacking">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/events/12ML.png" alt="ml">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/bg/pcb.png" alt="pcb">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/bg/tall.png" alt="building design">
+    </div>
+</div>
+
+<!--workshop end-->
+
+<!--games-->
+
+<div class="section_title mb30 mt30 ml20">
+    <h3 class="title">
+        gaming event
+    </h3>
+    </div>
+<div class="brand_carousel owl-carousel">
+    <div class="brand_item text-center">
+        <img src="assets/img/events/13pubg.png" alt="pubg">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/events/15fifa.png" alt="fifa">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/events/14csgo.png" alt="cs-go">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/events/16nfs.png" alt="nfs">
+    </div>
+</div>
+    
+<!--games end-->
+
+<!--fun games-->
+
+<div class="section_title mb30 mt30 ml20">
+    <h3 class="title">
+        gaming event
+    </h3>
+</div>
+<div class="brand_carousel owl-carousel">
+    <div class="brand_item text-center">
+        <img src="assets/img/events/07quest.png" alt="pubg">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/events/09vr.png" alt="fifa">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/events/08paintball.png" alt="cs-go">
+    </div>
+</div>
+        
+<!--fun games end-->
+
+<!--brands section -->
+<div class="section_title mb50 ml30 mt30">
+    <h3 class="title">
+        our partners
+    </h3>
+</div>
+<div class="brand_carousel owl-carousel mb30">
+    <div class="brand_item text-center">
+        <img src="assets/img/brands/b1.png" alt="brand">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/brands/b2.png" alt="brand">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/brands/b3.png" alt="brand">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/brands/b4.png" alt="brand">
+    </div>
+    <div class="brand_item text-center">
+        <img src="assets/img/brands/b5.png" alt="brand">
+    </div>
+</div>
+<!--brands section end-->
+
+<!--footer start -->
+
+<div class="copyright_footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-12">
+                <p>
+                    Copyright &copy;All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer end -->
+
+<!-- jquery -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<!--slick carousel -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!--parallax -->
+<script src="assets/js/parallax.min.js"></script>
+<!--Counter up -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!--Counter down -->
+<script src="assets/js/jquery.countdown.min.js"></script>
+<!-- WOW JS -->
+<script src="assets/js/wow.min.js"></script>
+<!-- Custom js -->
+<script src="assets/js/main.js"></script>
 </body>
 </html>
