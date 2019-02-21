@@ -76,10 +76,10 @@
             </h2>
             <strong class="cover-xl-text" id="delayedText">HASHTECH 2K19</strong>
             <p class="cover-date">
-                12 - 15 March 2019  - Ajeenkya dy patil university,  pune
+                12 - 15 March 2019  - Ajeenkya DY Patil University, Pune.
             </p>
-            <a href="#" class=" btn btn-primary btn-rounded" >
-                Buy Tickets Now
+            <a href="#event" class=" btn btn-primary btn-rounded" >
+                Register Now
             </a> 
         </div>
       </div>
@@ -306,7 +306,44 @@
     </div>
 </div>
 <!--footer end -->
-
+<script>
+    // Select all links with hashes
+    $('a[href*="#"]')
+      // Remove links that don't actually link to anything
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function(event) {
+        // On-page links
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+          && 
+          location.hostname == this.hostname
+        ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000, function() {
+              // Callback after animation
+              // Must change focus!
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) { // Checking if the target was focused
+                return false;
+              } else {
+                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
+              };
+            });
+          }
+        }
+      });
+    </script>
 <!-- jquery -->
 <script src="assets/js/jquery.min.js"></script>
 <!-- bootstrap -->

@@ -177,8 +177,9 @@ p {
   font-style: italic;
 }
 
-strong {
+.strong {
   font-weight: 700;
+  font-size: 10px;
 }
 
 img {
@@ -189,6 +190,7 @@ img {
 
   strong {
     font-weight: 500;
+    font-size: 10px;
   }
 
   h2, .h2 {
@@ -391,7 +393,9 @@ header .logo {
 header .logo img {
   float: left;
   max-width: 160px;
-  margin-right: 3px;
+  margin-right: 30px;
+  padding-right: 30px;s
+
 }
 header ul.menu li a.nav-link {
   padding: 20px 12px !important;
@@ -652,7 +656,7 @@ Cover
   -webkit-transition: all 0.4s 600ms ease-in-out;
   transition: all 0.4s 600ms ease-in-out;
 }
- .cover_item .cover-date {
+.container cover_item .cover-date {
   font-size: 18px;
   color: #ffffff;
   margin-bottom: 25px;
@@ -1828,3 +1832,47 @@ textarea.form-control {
   to { opacity: 1; }
 }
 
+#delayedText{
+  font-size: 70px;
+  font-weight: 700;
+  color: #038BFF;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+/* single page */
+
+.registerbtn {
+  background-color:#038bff ;
+  color: white;
+  padding: 16px 20px;
+  margin: 80px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+  border-radius: 50px;
+  position: relative;
+  transition: 500ms ease-in-out;  
+}
+.registerbtn:hover {
+  background-color: #000000; 
+  color:white;
+  box-shadow: 0 0 10px 5px rgb(170, 170, 170);
+  transition: 500ms ease-in-out;
+}
+
+.pb100 {
+  padding-bottom: 100px !important;
+}
+
+.pl120 {
+  padding-left: 120px;
+}
+
+.ml500 {
+  margin-left: 500px !important;
+}
+
+.pb50 {
+  padding-bottom: 50px !important;
+}

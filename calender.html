@@ -25,8 +25,9 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/calender.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: black; >
 <div class="loader">
     <div class="loader-outter"></div>
     <div class="loader-inner"></div>
@@ -34,39 +35,34 @@
 
 <!--header start here -->
 <header class="header navbar fixed-top navbar-expand-md">
-    <div class="container">
-        <a class="navbar-brand logo" href="#">
-            <img src="assets/img/logo.png" alt="Evento"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="lnr lnr-text-align-right"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
-            <ul class=" nav navbar-nav menu">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Speakers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Contact</a>
-                </li>
-                <li class="search_btn">
-                    <a  href="#">
-                       <i class="ion-ios-search"></i>
-                    </a>
-                </li>
-            </ul>
+        <div class="container">
+            <a class="navbar-brand logo" href="#">
+                <img src="assets/img/logo-dark.png" alt="logo"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="lnr lnr-text-align-right"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
+                <ul class=" nav navbar-nav menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="calender.html">calender</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Sponsers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 <!--header end here-->
 
 <!--cover section slider -->
@@ -102,89 +98,114 @@
 <!--event calender-->
 <section class="pb100">
     <div class="container">
-        <div class="table-responsive">
-            <table class="event_calender table">
+        <div class="table-responsive" id="table">
+            <table class="event_calender table ">
+                
                 <thead class="event_title">
-                <tr>
-                    <th>
-                        <i class="ion-ios-calendar-outline"></i>
-                        <span>next events calendar</span>
-                    </th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </tr>
+                    <tr>
+                        <th id="tblhead">
+                            
+                            <span><h4>Upcoming Events Calendar</h4></span>
+                        </th>
+                        <th>    </th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>
-                        <img src="assets/img/cleander/c1.png" alt="event">
-                    </td>
-                    <td class="event_date">
-                        14
-                        <span>February</span>
-                    </td>
-                    <td>
-                        <div class="event_place">
-                            <h5>Conference in Amsterdam</h5>
-                            <h6>08 AM - 04 PM</h6>
-                            <p>Speaker: Daniel Hill</p>
-                        </div>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-primary btn-rounded">Read More</a>
-                    </td>
-                    <td class="buy_link">
-                        <a href="#">buy now</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="assets/img/cleander/c2.png" alt="event">
-                    </td>
-                    <td class="event_date">
-                        18
-                        <span>February</span>
-                    </td>
-                    <td>
-                        <div class="event_place">
-                            <h5>Conference in Amsterdam</h5>
-                            <h6>08 AM - 04 PM</h6>
-                            <p>Speaker: Daniel Hill</p>
-                        </div>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-primary btn-rounded">Read More</a>
-                    </td>
-                    <td class="buy_link">
-                        <a href="#">buy now</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="assets/img/cleander/c3.png" alt="event">
-                    </td>
-                    <td class="event_date">
-                        22
-                        <span>February</span>
-                    </td>
-                    <td>
-                        <div class="event_place">
-                            <h5>Conference in Amsterdam</h5>
-                            <h6>08 AM - 04 PM</h6>
-                            <p>Speaker: Daniel Hill</p>
-                        </div>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-primary btn-rounded">Read More</a>
-                    </td>
-                    <td class="buy_link">
-                        <a href="#">buy now</a>
-                    </td>
-                </tr>
+                    <tr>
+                        <td id="tdimg">  
+                            <img id="tblimg"src="assets/img/events/Workshop.png" alt="event">
+                        </td>
+                        <td class="event_date">
+                            12
+                            <span>March</span>
+                        </td>
+                        <td>
+                            <div class="event_place">
+                                <h5><font color = "#4472C4" >Workshops</font></h5>
+                                <h6><font color = "#4472C4" >09 AM - 06 PM</font></h6>
+                                <p><font color = "#4472C4" ></font></p>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-rounded">Read More</a>
+                        </td>
+                        <td class="buy_link">
+                            <a href="#">buy now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="tdimg">
+                            <img id="tblimg"src="assets/img/events/Workshop2.png" alt="event">
+                        </td>
+                        <td class="event_date">
+                            13
+                            <span>March</span>
+                        </td>
+                        <td>
+                            <div class="event_place">
+                                <h5><font color = "#4472C4" >Workshops</font></h5>
+                                <h6><font color = "#4472C4" >09 AM - 06 PM</font></h6>
+                                <p><font color = "#4472C4" >Speaker: Daniel Hill</font></p>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-rounded">Read More</a>
+                        </td>
+                        <td class="buy_link">
+                            <a href="#">buy now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="tdimg">
+                            <img id="tblimg" src="assets/img/events/event.png" alt="event">
+                        </td>
+                        <td class="event_date">
+                            14
+                            <span>March</span>
+                        </td>
+                        <td>
+                            <div class="event_place">
+                                <h5><font color = "#4472C4" >Games and Competition</font></h5>
+                                <h6><font color = "#4472C4" >09 AM - 06 PM</font></h6>
+                                <p><font color = "#4472C4" >Speaker: Daniel Hill</font></p>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-rounded">Read More</a>
+                        </td>
+                        <td class="buy_link">
+                            <a href="#">buy now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="tdimg">
+                            <img id="tblimg" src="assets/img/events/event2.png" alt="event">
+                        </td>
+                        <td class="event_date">
+                            15
+                            <span>March</span>
+                        </td>
+                        <td>
+                            <div class="event_place">
+                                <h5><font color = "#4472C4" >Games and Competition</font></h5>
+                                <h6><font color = "#4472C4" >09 AM - 06 PM</font></h6>
+                                <p><font color = "#4472C4" >Speaker: Daniel Hill</font></p>
+                            </div>         
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-rounded">Read More</a>
+                        </td>
+                        <td class="buy_link">
+                            <a href="#">buy now</a>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
+                <h5><font color = "#038BFF" >Note : Into The NEXT DIMENSION, CS:GO and NFS:Most Wanted will be there throughout complete event.(12-15 March)</font></h5>
+            
         </div>
     </div>
 </section>
@@ -241,119 +262,17 @@
 <!--get tickets section end-->
 
 <!--footer start -->
-<footer>
-    <div class="container">
-        <div class="row justify-content-center">
-            
-            <div class="col-md-4 col-12">
-                <div class="footer_box">
-                    <div class="footer_header">
-                        <div class="footer_logo">
-                            <img src="assets/img/logo.png" alt="evento">
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="footer_box_body">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in aazzzCurabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
-                        </p>
-                        <ul class="footer_social">
-                            <li>
-                                <a href="#"><i class="ion-social-pinterest"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-dribbble"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-instagram"></i></a>
-                            </li>
-                        </ul>
-                    
-                <div id="copy-right"> Copyright &copy; All rights reserved</div>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="footer_box">
-                    <div class="footer_header">
-                        <h4 class="footer_title">
-                            instagram
-                        </h4>
-                    </div>
-                    <div class="footer_box_body">
-                        <ul class="instagram_list">
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c1.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c2.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c3.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c3.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c2.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c1.png" alt="instagram">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="footer_box">
-                    <div class="footer_header">
-                        <h4 class="footer_title">
-                            subscribe to our newsletter
-                        </h4>
-                    </div>
-                    <div class="footer_box_body">
-                        <div class="newsletter_form">
-                            <input type="email" class="form-control" placeholder="E-Mail here">
-                            <button class="btn btn-rounded btn-block btn-primary">SUBSCRIBE</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 <div class="copyright_footer">
-    <div class="container">
-        <div class="row justify-content-center">
-                
-                
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-12">
+                    <p>
+                        Copyright &copy;All rights reserved.
+                    </p>
+                </div>
             </div>
-            
         </div>
     </div>
-</div>
 <!--footer end -->
 
 <!-- jquery -->
